@@ -10,5 +10,6 @@ namespace TobaccoTray.Contracts
 	public interface IFlameable
 	{
 		void Ingnite(NotifyIcon notifyIcon);
+		void Extinguish();
 	}
 }

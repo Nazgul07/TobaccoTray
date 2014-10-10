@@ -12,12 +12,18 @@ namespace ExamplePlugin
     {
 		public void Ingnite(NotifyIcon notifyIcon)
 		{
-			notifyIcon.ContextMenuStrip.Items.Add(new ToolStripMenuItem("Plugin Option", null, Popup, "Plugin Option"));
+			notifyIcon.ContextMenuStrip.Items.Add(new ToolStripMenuItem("Example Plugin", null, Popup, "Example Plugin"));
 		}
 
 		private void Popup(object sender, EventArgs e)
 		{
 			MessageBox.Show("Hello World!");
+		}
+
+
+		public void Extinguish()
+		{
+			MessageBox.Show("Goodbye World!");
 		}
 	}
 }
